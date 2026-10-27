@@ -3,123 +3,156 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scientist's Lab Report | Yeast</title>
+    <title>Science Lab Report | Yeast</title>
     <style>
-      body {
-        font-family: system-ui, -apple-system, sans-serif;
-        line-height: 1.6;
-        max-width: 900px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-        color: #222;
+      :root {
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --text-color: #0f172a;
+        --muted: #64748b;
+        --border-color: #e2e8f0;
       }
-      .media-grid {
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+      }
+      header {
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+      }
+      h1 {
+        margin: 0 0 0.5rem 0;
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.35rem;
+        margin-top: 2rem;
+        margin-bottom: 0.25rem;
+      }
+      p.subtitle {
+        color: var(--muted);
+        margin-top: 0;
+        font-style: italic;
+      }
+      .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-        margin-bottom: 2rem;
+        gap: 1.25rem;
+        margin-top: 1rem;
       }
       figure {
         margin: 0;
-        background: #f8f9fa;
-        border: 1px solid #e2e8f0;
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
         border-radius: 8px;
         padding: 0.75rem;
-      }
-      figure video, figure img {
-        width: 100%;
-        height: auto;
-        border-radius: 4px;
-        display: block;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
       }
       figcaption {
         font-weight: 600;
+        font-size: 0.95rem;
         margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+      video, img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        display: block;
+        background: #000;
+      }
+      img {
+        background: #eee;
+        object-fit: cover;
       }
     </style>
   </head>
   <body>
+
     <header>
       <h1>Science Lab Report: Yeast Fermentation</h1>
+      <p class="subtitle">Observation Data & Media Archive</p>
     </header>
-    <hr>
 
     <main>
       <section>
         <h2>Observation Videos</h2>
-        <p><em>Unsorted lab footage (select relevant clips below).</em></p>
-        
-        <div class="media-grid">
+        <p class="subtitle">Lab trial recordings (.mp4 format).</p>
+        <div class="grid">
           <figure>
-            <figcaption>Vid 1</figcaption>
-            <video controls>
-              <source src="./IMG_0093.mov" type="video/quicktime">
-              Your browser does not support the video tag.
+            <figcaption>Vid 1 (IMG_0093)</figcaption>
+            <video controls playsinline preload="metadata">
+              <source src="./IMG_0093.mp4" type="video/mp4">
+              Your browser does not support HTML video.
             </video>
           </figure>
 
           <figure>
-            <figcaption>Vid 2</figcaption>
-            <video controls>
-              <source src="./IMG_0095.mov" type="video/quicktime">
-              Your browser does not support the video tag.
+            <figcaption>Vid 2 (IMG_0095)</figcaption>
+            <video controls playsinline preload="metadata">
+              <source src="./IMG_0095.mp4" type="video/mp4">
+              Your browser does not support HTML video.
             </video>
           </figure>
 
           <figure>
-            <figcaption>Vid 3</figcaption>
-            <video controls>
-              <source src="./IMG_0097.mov" type="video/quicktime">
-              Your browser does not support the video tag.
+            <figcaption>Vid 3 (IMG_0097)</figcaption>
+            <video controls playsinline preload="metadata">
+              <source src="./IMG_0097.mp4" type="video/mp4">
+              Your browser does not support HTML video.
             </video>
           </figure>
 
           <figure>
-            <figcaption>Vid 4</figcaption>
-            <video controls>
-              <source src="./IMG_0099.mov" type="video/quicktime">
-              Your browser does not support the video tag.
+            <figcaption>Vid 4 (IMG_0099)</figcaption>
+            <video controls playsinline preload="metadata">
+              <source src="./IMG_0099.mp4" type="video/mp4">
+              Your browser does not support HTML video.
             </video>
           </figure>
 
           <figure>
-            <figcaption>Vid 5</figcaption>
-            <video controls>
-              <source src="./IMG_0107.mov" type="video/quicktime">
-              Your browser does not support the video tag.
+            <figcaption>Vid 5 (IMG_0107)</figcaption>
+            <video controls playsinline preload="metadata">
+              <source src="./IMG_0107.mp4" type="video/mp4">
+              Your browser does not support HTML video.
             </video>
           </figure>
         </div>
       </section>
 
-      <hr>
-
       <section>
         <h2>Observation Images</h2>
-        <p><em>Unsorted lab stills.</em></p>
-
-        <div class="media-grid">
+        <p class="subtitle">Microscope and test tube sample stills.</p>
+        <div class="grid">
           <figure>
-            <figcaption>Img 1</figcaption>
-            <img src="./IMG_0086.jpeg" alt="Yeast observation slide 1" loading="lazy">
+            <figcaption>Img 1 (IMG_0086)</figcaption>
+            <img src="./IMG_0086.jpeg" alt="Yeast sample observation 1" loading="lazy">
           </figure>
 
           <figure>
-            <figcaption>Img 2</figcaption>
-            <img src="./IMG_0087.jpeg" alt="Yeast observation slide 2" loading="lazy">
+            <figcaption>Img 2 (IMG_0087)</figcaption>
+            <img src="./IMG_0087.jpeg" alt="Yeast sample observation 2" loading="lazy">
           </figure>
 
           <figure>
-            <figcaption>Img 3</figcaption>
-            <img src="./IMG_0088.jpeg" alt="Yeast observation slide 3" loading="lazy">
+            <figcaption>Img 3 (IMG_0088)</figcaption>
+            <img src="./IMG_0088.jpeg" alt="Yeast sample observation 3" loading="lazy">
           </figure>
 
           <figure>
-            <figcaption>Img 4</figcaption>
-            <img src="./IMG_0089.jpeg" alt="Yeast observation slide 4" loading="lazy">
+            <figcaption>Img 4 (IMG_0089)</figcaption>
+            <img src="./IMG_0089.jpeg" alt="Yeast sample observation 4" loading="lazy">
           </figure>
         </div>
       </section>
     </main>
+
   </body>
 </html>
