@@ -1,31 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Scientist's lab report | Yeast</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientist's Lab Report | Yeast</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        line-height: 1.6;
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        color: #222;
+      }
+      .media-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      figure {
+        margin: 0;
+        background: #f8f9fa;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 0.75rem;
+      }
+      figure video, figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        display: block;
+      }
+      figcaption {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>Science lab report | Yeast</h1><br>
-    <hr><br>
-    <h1>Observation Vids (some are not needed, unsorted)</h1><br>
-    <p>Vid 1</p><br>
-    <video controls src="./IMG_0093.mov"><br>
-    <p>Vid 2</p><br>
-    <video controls src="./IMG_0095.mov"><br>
-    <p>Vid 3</p><br>
-    <video controls src="./IMG_0097.mov"><br>
-    <p>Vid 4</p><br>
-    <video controls src="./IMG_0099.mov"><br>
-    <p>Vid 5</p><br>
-    <video controls src="./IMG_0107.mov"><br>
-    <hr><br>
-    <h1>Observation Imgs (some may not be needed, unsorted.)</h1><br>
-    <p>Img 1</p><br>
-    <img src="./IMG_0086.jpeg"><br>
-    <p>Img 2</p><br>
-    <img src="./IMG_0087.jpeg"><br>
-    <p>Img 3</p><br>
-    <img src="./IMG_0088.jpeg"><br>
-    <p>Img 4</p><br>
-    <img src="./IMG_0089.jpeg"><br>
+    <header>
+      <h1>Science Lab Report: Yeast Fermentation</h1>
+    </header>
+    <hr>
+
+    <main>
+      <section>
+        <h2>Observation Videos</h2>
+        <p><em>Unsorted lab footage (select relevant clips below).</em></p>
+        
+        <div class="media-grid">
+          <figure>
+            <figcaption>Vid 1</figcaption>
+            <video controls>
+              <source src="./IMG_0093.mov" type="video/quicktime">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+
+          <figure>
+            <figcaption>Vid 2</figcaption>
+            <video controls>
+              <source src="./IMG_0095.mov" type="video/quicktime">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+
+          <figure>
+            <figcaption>Vid 3</figcaption>
+            <video controls>
+              <source src="./IMG_0097.mov" type="video/quicktime">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+
+          <figure>
+            <figcaption>Vid 4</figcaption>
+            <video controls>
+              <source src="./IMG_0099.mov" type="video/quicktime">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+
+          <figure>
+            <figcaption>Vid 5</figcaption>
+            <video controls>
+              <source src="./IMG_0107.mov" type="video/quicktime">
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Observation Images</h2>
+        <p><em>Unsorted lab stills.</em></p>
+
+        <div class="media-grid">
+          <figure>
+            <figcaption>Img 1</figcaption>
+            <img src="./IMG_0086.jpeg" alt="Yeast observation slide 1" loading="lazy">
+          </figure>
+
+          <figure>
+            <figcaption>Img 2</figcaption>
+            <img src="./IMG_0087.jpeg" alt="Yeast observation slide 2" loading="lazy">
+          </figure>
+
+          <figure>
+            <figcaption>Img 3</figcaption>
+            <img src="./IMG_0088.jpeg" alt="Yeast observation slide 3" loading="lazy">
+          </figure>
+
+          <figure>
+            <figcaption>Img 4</figcaption>
+            <img src="./IMG_0089.jpeg" alt="Yeast observation slide 4" loading="lazy">
+          </figure>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
